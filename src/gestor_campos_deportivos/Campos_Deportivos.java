@@ -6,14 +6,16 @@ public class Campos_Deportivos {
     private int precioPorHora;
     private String estado;
     private String techado;
+    private String urlFoto;
 
-    public Campos_Deportivos(String nombre, String tipoDeporte, String ubicacion, int precioPorHora, String estado, String techado) {
+    public Campos_Deportivos(String nombre, String tipoDeporte, String ubicacion, int precioPorHora, String estado, String techado, String urlFoto) {
         this.nombre = nombre;
         this.tipoDeporte = tipoDeporte;
         this.ubicacion = ubicacion;
         this.precioPorHora = precioPorHora;
         this.estado = estado;
         this.techado= techado;
+        this.urlFoto= urlFoto;
     }
     
     
@@ -38,9 +40,15 @@ public class Campos_Deportivos {
         return estado;
     }
 
-    public String isTechado() {
+    public String getTechado() {
         return techado;
     }
+
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+    
+    
 
     
     //setters
@@ -62,6 +70,14 @@ public class Campos_Deportivos {
 
     public void setTechado(String techado) {
         this.techado = techado;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
     }
     
     
